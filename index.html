@@ -7,7 +7,7 @@
   <title>Formulario</title>
 </head>
 <body>
-  <form action="./">
+    <form action="./">
     <label for="nome">Nome</label>
     <input type="text" id="nome" name="nome">
     
@@ -16,7 +16,15 @@
     
     <label for="senha">Senha</label>
     <input type="password" id="senha" name="senha">
-    
+    <label for="parcelas"></label>
+    <select name="parcelas" id="parcelas">
+      <option value="1x">1x de R$200,00</option>
+      <option value="2x">2x de R$100,00</option>
+      <option value="4x">4x de R$50,00</option>
+    </select>
+
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
     <div class="checkbox">
     <input type="checkbox" id="termos" name="termos" value="aceito">
     <label for="termos">Aceito os termos de condições da empresa</label>
@@ -26,10 +34,24 @@
     <label for="anuncio">Desejo receber anuncios.</label>
   </div>
 
-  <p>Entrega</p>
+  <p>Entrega:</p>
   <div class="radio">
     <input type="radio" id="retirada" name="anuncio">
-    <label for="anuncio">Aceito os termos de condições da empresa</label>
+    <label for="retirada">Retirar no local.</label>
+  </div>
+  <div class="radio">
+    <input type="radio" id="entraga" name="anuncio">
+    <label for="entraga">Entrega em casa.</label>
+  </div>
+
+  <p>Futuro:</p>
+  <div class="radio">
+    <input type="radio" id="retirada2" name="futuro">
+    <label for="retirada2">Retirar no local.</label>
+  </div>
+  <div class="radio">
+    <input type="radio" id="entraga2" name="futuro">
+    <label for="entraga2">Entrega em casa.</label>
   </div>
 
     <label for="emial">E-mail</label>
@@ -39,7 +61,7 @@
     <input type="number" id="idade" name="idade">
     
     <label for="saida">Saida do Hotel</label>
-    <input type="date" id="saida" name="saida">
+    <input type="date" id="saida" name="saida"> 
     
     <button>Enviar</button>
   </form>
